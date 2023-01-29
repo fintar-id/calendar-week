@@ -13,11 +13,11 @@
               <p>{{ state.week }} / {{ state.weeks }}</p>
             </div>
           </div>
-          <div class="bg-white rounded-lg grid grid-cols-8 gap-2 pt-8">
+          <div class="bg-white rounded-lg grid grid-cols-8 gap-1 md:gap-2 p-2 pt-8">
             <div v-for="index in state.weeks">
               <div v-if="index <= state.week">
                 <div class="md:hidden w-[55px]">
-                  <svg viewBox="0 25 100 100">
+                  <svg viewBox="12 25 100 100">
                     <circle cx="50" cy="50" r="20" stroke="red" stroke-width="4" fill="white" fill-opacity="0"/>
                     <circle cx="50" cy="50" r="14" fill="red" fill-opacity="1"/>
                   </svg>
@@ -31,7 +31,7 @@
               </div>
               <div v-else>
                 <div class="md:hidden w-[55px]">
-                  <svg viewBox="0 25 100 100">
+                  <svg viewBox="12 25 100 100">
                     <circle cx="50" cy="50" r="20" stroke="black" stroke-width="4" fill="white" fill-opacity="0"/>
                   </svg>
                 </div>
